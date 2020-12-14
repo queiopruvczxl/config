@@ -8,10 +8,6 @@
     "settings": {
       "timeout": 0,
       "accounts": [
-        {
-          "user": "gungfu2012",
-          "pass": "888888"
-        }
       ],
       "allowTransparent": false,
       "userlevel": 0
