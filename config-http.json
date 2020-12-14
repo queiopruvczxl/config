@@ -1,0 +1,24 @@
+{
+  "log": {
+    "loglevel": "debug"
+  },
+  "inbound": {
+    "protocol": "http",
+    "port": 8080,
+    "settings": {
+      "timeout": 0,
+      "accounts": [
+        {
+          "user": "gungfu2012",
+          "pass": "888888"
+        }
+      ],
+      "allowTransparent": false,
+      "userlevel": 0
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
