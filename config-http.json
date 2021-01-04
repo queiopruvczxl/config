@@ -1,20 +1,28 @@
 {
-  "log": {
-    "loglevel": "debug"
-  },
-  "inbound": {
-    "protocol": "http",
-    "port": 8080,
+  "inbounds": [
+  {
+    "port": 443,
+    "protocol": "vmess",
     "settings": {
-      "timeout": 0,
-      "accounts": [
-      ],
-      "allowTransparent": false,
-      "userlevel": 0
+      "clients": [
+        {
+          "id": "22cbf746-bc0f-45e7-bbd0-9f3d7d940b0b",
+          "alterId": 520
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/ws"
+      }
     }
-  },
-  "outbound": {
+  }
+  ],
+  "outbounds": [
+  {
     "protocol": "freedom",
     "settings": {}
   }
+  ]
 }
