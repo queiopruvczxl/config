@@ -1,28 +1,25 @@
 {
-  "log": {
-    "loglevel": "none"
-  },
-  "inbound": {
-    "protocol": "vmess",
-    "port": 8080,
-    "settings": {
-      "clients": [
-        {
-          "id": "e00f6afd-aee8-4093-beb2-5a96b92db52d",
-          "alterId": 6333
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "wsSettings": {
-        "path": "/ws"
-        }
+  "inbounds": [
+    {
+      "port": 8080,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "e00f6afd-aee8-4093-beb2-5a96b92db52d",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network":"ws"
+      }
     }
-  },
-  "inboundDetour": [],
-  "outbound": {
-    "protocol": "freedom",
-   "settings": {}
-  }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
 }
