@@ -4,19 +4,19 @@
   },
   "inbound": {
     "protocol": "vmess",
-    "port": 80,
+    "port": 8080,
     "settings": {
       "clients": [
         {
-          "id": "b707c9e6-3a61-4f0b-8844-9a398cfadfb7",
-          "alterId": 64
+          "id": "e00f6afd-aee8-4093-beb2-5a96b92db52d",
+          "alterId": 6333
         }
       ]
     },
     "streamSettings": {
       "network": "ws",
       "wsSettings": {
-        "path": "/add7625"
+        "path": "/ws"
         }
     }
   },
